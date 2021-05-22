@@ -3,7 +3,5 @@
 + Scss
 + HTML5
 
-Tasarımın demosuna [buradan](https://efsanegnyl.github.io/carddesign/){:target="_blank"} ulaşabilirsiniz.
+Tasarımın demosuna [buradan](https://efsanegnyl.github.io/carddesign/) ulaşabilirsiniz.
 
-
-<a href="https://efsanegnyl.github.io/carddesign/" target="_blank">New Tab</a>
