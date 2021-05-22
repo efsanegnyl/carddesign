@@ -1,0 +1,113 @@
+        $lightBlue:#ECF0FF;
+        $blue:#5074F3;
+        $white:#fff;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            display: flex;
+            background-color: $lightBlue;
+            z-index: -2;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .cardDesign {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: white;
+            padding: 70px 80px;
+            width: 500px;
+
+            &::after {
+                content: '';
+                width: 250px;
+                height: 100%;
+                background-color: $blue;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+            }
+
+            .card {
+                &-header {
+                    margin-bottom: 50px;
+                    font-family: 'Roboto', sans-serif;
+
+                    h2 {
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: regular;
+                    }
+                }
+
+                &-body {
+                    font-size: 18px;
+                    color: $blue;
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin-bottom: 20px;
+                            border: 1px solid $blue;
+                            padding: 20px;
+                            border-radius: 5px;
+                            transition: all .3s;
+                            cursor: pointer;
+
+                            div {
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    width: 10px;
+                                    height: 10px;
+                                    border: 2px solid;
+                                    border-color: $blue $blue transparent transparent;
+                                    transform: rotate(45deg);
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $blue;
+                                color: $white;
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    width: 10px;
+                                    height: 10px;
+                                    border: 2px solid;
+                                    border-color: $white $white transparent transparent;
+                                    transform: rotate(45deg);
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }

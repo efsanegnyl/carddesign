@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ECF0FF;
+  z-index: -2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.cardDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  background-color: white;
+  padding: 70px 80px;
+  width: 500px;
+}
+
+.cardDesign::after {
+  content: '';
+  width: 250px;
+  height: 100%;
+  background-color: #5074F3;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.cardDesign .card-header {
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardDesign .card-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cardDesign .card-header p {
+  font-size: 18px;
+  font-weight: regular;
+}
+
+.cardDesign .card-body {
+  font-size: 18px;
+  color: #5074F3;
+}
+
+.cardDesign .card-body ul {
+  list-style: none;
+}
+
+.cardDesign .card-body ul li {
+  margin-bottom: 20px;
+  border: 1px solid #5074F3;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.cardDesign .card-body ul li div {
+  position: relative;
+}
+
+.cardDesign .card-body ul li div::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-color: #5074F3 #5074F3 transparent transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cardDesign .card-body ul li:hover {
+  background-color: #5074F3;
+  color: #fff;
+  position: relative;
+}
+
+.cardDesign .card-body ul li:hover::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-color: #fff #fff transparent transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
