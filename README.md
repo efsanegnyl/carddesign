@@ -3,4 +3,4 @@
 + Scss
 + HTML5
 
-Tasarımın demosuna [buradan](https://efsanegnyl.github.io/carddesign/) ulaşabilirsiniz.
+Tasarımın demosuna [buradan](https://efsanegnyl.github.io/carddesign/{:target="_blank"}) ulaşabilirsiniz.
